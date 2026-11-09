@@ -15,7 +15,7 @@ import com.ledgerline.backend.service.AuditLogService;
 
 @RestController
 @RequestMapping("/api/admin/audit-logs")
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 public class AuditLogController {
 
     private final AuditLogService auditLogService;

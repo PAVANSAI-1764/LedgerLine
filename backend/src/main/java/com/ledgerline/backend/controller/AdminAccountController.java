@@ -18,7 +18,7 @@ import com.ledgerline.backend.repository.AuditLogRepository;
 
 @RestController
 @RequestMapping("/api/admin/accounts")
-@PreAuthorize("hasRole('ADMIN')")
+@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 public class AdminAccountController {
 
     private final AccountRepository accountRepository;
